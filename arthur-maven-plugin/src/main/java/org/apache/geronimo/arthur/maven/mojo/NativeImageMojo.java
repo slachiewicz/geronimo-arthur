@@ -39,7 +39,6 @@ import org.apache.maven.project.DependencyResolutionRequest;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.project.MavenProjectHelper;
 import org.apache.maven.project.ProjectDependenciesResolver;
-import org.apache.maven.shared.dependency.graph.DependencyGraphBuilder;
 import org.apache.xbean.finder.AnnotationFinder;
 import org.apache.xbean.finder.archive.Archive;
 import org.apache.xbean.finder.archive.CompositeArchive;
@@ -371,9 +370,6 @@ public class NativeImageMojo extends ArthurMojo {
 
     @Component
     private ProjectDependenciesResolver dependenciesResolver;
-
-    @Component
-    private DependencyGraphBuilder graphBuilder;
 
     @Component
     private MavenProjectHelper helper;
